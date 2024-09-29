@@ -158,3 +158,108 @@ button:nth-child(2):hover{
     transform-origin: bottom left;
 
 }
+/* Default styles (for larger screens) */
+
+/* ... your existing CSS here ... */
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .navlist {
+        gap: 2rem;
+    }
+
+    .left-container {
+        padding-left: 2rem;
+    }
+
+    .content {
+        margin-left: 4rem;
+    }
+
+    .content .detail {
+        max-width: 30rem;
+    }
+
+    .btn-container button {
+        font-size: 1rem;
+    }
+
+    .design .circle:nth-child(1) {
+        width: 30rem;
+    }
+
+    .design .circle:nth-child(2) {
+        width: 24rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-container {
+        flex-direction: column;
+    }
+
+    .navlist {
+        flex-direction: column;
+        position: static;
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .left-container, .right-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .icons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .content .intro {
+        font-size: 1.3rem;
+    }
+
+    .content h4 {
+        font-size: 1.5rem;
+    }
+
+    .content .detail {
+        font-size: 1rem;
+    }
+
+    .btn-container button {
+        padding: .5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .design .circle {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 480px) {
+    .navlist {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .content .intro {
+        font-size: 1.2rem;
+    }
+
+    .content h4 {
+        font-size: 1.3rem;
+    }
+
+    .content .detail {
+        font-size: 0.9rem;
+    }
+}
